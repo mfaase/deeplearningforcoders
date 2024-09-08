@@ -1,0 +1,23 @@
+# Ignore all models in each service folder
+ocr/models/
+translation/models/
+tts/models/
+
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore Conda environment files
+*.conda
+*.env
+
+# Ignore sample files
+sample_image.png
+sample.wav
+
+# Ignore demo notebook
+demo.ipynb

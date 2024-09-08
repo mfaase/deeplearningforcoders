@@ -1,0 +1,26 @@
+version: '1'
+
+services:
+  ocr-service:
+    build: ./ocr
+    container_name: ocr-service
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./ocr/models:/app/models
+
+  translation-service:
+    build: ./translation
+    container_name: translation-service
+    ports:
+      - "8001:8001"
+    volumes:
+      - ./translation/models:/app/models
+
+  tts-service:
+    build: ./tts
+    container_name: tts-service
+    ports:
+      - "8002:8002"
+    volumes:
+      - ./tts/models:/app/models
