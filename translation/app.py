@@ -3,7 +3,7 @@ from transformers import MarianMTModel, MarianTokenizer
 
 app = FastAPI()
 
-model_path = "./models/opus-mt-fr-en"
+model_path = "./models/"
 translator_tokenizer = MarianTokenizer.from_pretrained(model_path)
 translator_model = MarianMTModel.from_pretrained(model_path)
 

@@ -1,17 +1,21 @@
-name: deeplearning_app_env
+name: ocr_translation_tts_env
 channels:
   - conda-forge
   - defaults
+  - pytorch
 dependencies:
   - python=3.9
   - pip
-  - pytorch
-  - torchaudio
   - pillow
   - scipy
+  - pytorch::pytorch
+  - pytorch::torchaudio
   - requests
-  - fastapi
-  - uvicorn
+  - jupyter
   - pip:
       - easyocr
       - transformers
+      - sentencepiece
+      - fastapi
+      - uvicorn
+     

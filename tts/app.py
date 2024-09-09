@@ -5,7 +5,7 @@ import scipy
 
 app = FastAPI()
 
-model_path = "./models/facebook/mms-tts-eng"
+model_path = "./models/facebook/"
 tts_model = VitsModel.from_pretrained(model_path)
 tokenizer = AutoTokenizer.from_pretrained(model_path)
 

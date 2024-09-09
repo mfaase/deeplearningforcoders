@@ -4,7 +4,7 @@ import easyocr
 
 app = FastAPI()
 
-reader = easyocr.Reader(['fr'], gpu=False, model_storage_directory='./models/easyocr')
+reader = easyocr.Reader(['fr'], gpu=False, model_storage_directory='./models/')
 
 @app.post("/ocr/")
 async def perform_ocr(file: UploadFile = File(...)):
