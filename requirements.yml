@@ -18,4 +18,5 @@ dependencies:
       - sentencepiece
       - fastapi
       - uvicorn
+      - python-multipart
      

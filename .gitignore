@@ -16,8 +16,9 @@ __pycache__/
 *.env
 
 # Ignore sample files
-sample_image.png
-sample.wav
+*.png
+*.jpg
+*.wav
 
 # Ignore demo notebook
 demo.ipynb

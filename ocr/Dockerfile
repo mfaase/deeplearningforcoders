@@ -2,7 +2,7 @@ FROM python:3.9-slim
 
 # Install dependencies
 RUN apt-get update && apt-get install -y libglib2.0-0 libsm6 libxrender1 libxext6 && rm -rf /var/lib/apt/lists/*
-RUN pip install fastapi uvicorn easyocr pillow
+RUN pip install fastapi uvicorn easyocr pillow python-multipart
 
 # Copy model and app
 COPY models /app/models
