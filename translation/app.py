@@ -4,11 +4,9 @@ from transformers import MarianMTModel, MarianTokenizer
 
 app = FastAPI()
 
-# Define the request body structure
 class TranslationRequest(BaseModel):
     text: str
 
-# Load the model and tokenizer from the local directory
 model_path = './models/opus-mt-fr-en'
 translator_tokenizer = MarianTokenizer.from_pretrained(model_path)
 translator_model = MarianMTModel.from_pretrained(model_path)

@@ -5,7 +5,6 @@ import numpy as np
 
 app = FastAPI()
 
-# Initialize EasyOCR reader for French
 reader = easyocr.Reader(['fr'], gpu=False, model_storage_directory='./models/')
 
 @app.post("/ocr/")
