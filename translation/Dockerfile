@@ -1,7 +1,7 @@
 FROM python:3.9-slim
 
 # Install dependencies
-RUN pip install fastapi uvicorn transformers torch
+RUN pip install fastapi uvicorn transformers torch sentencepiece
 
 # Copy model and app
 COPY models /app/models
